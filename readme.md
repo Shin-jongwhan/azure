@@ -64,7 +64,7 @@ az storage blob upload-batch --account-name uploadstorage1 --destination uploadc
 
 ### sync 로 복사하는 방법
 ```
-az storage blob sync --account-name uploadstorage1 --container uploadcontainer1 -s /TBI/People/tbi/jhshin/test/test/ --connection-string "DefaultEndpointsProtocol=https;AccountName=uploadstorage1;AccountKey=2BodvJ/SQXpfAAP6df0fAcx+5CjBH/1Biowo81yk0C+xYEeFJu+90Fmw/B1UNR+pO+ufJ2gB3WYs+ASt9YeM9g==;EndpointSuffix=core.windows.net"
+az storage blob sync --account-name uploadstorage1 --container uploadcontainer1 -s /TBI/People/tbi/jhshin/test/test/ --connection-string [key]
 ```
 #### ![image](https://user-images.githubusercontent.com/62974484/226267429-5c6e9893-bc53-4ce8-b13d-9478d4d497d2.png)
 ### 폴더로 sync 복사
