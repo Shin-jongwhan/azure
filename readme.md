@@ -62,6 +62,12 @@ az storage blob upload-batch --account-name uploadstorage1 --destination uploadc
 #### ![image](https://user-images.githubusercontent.com/62974484/226267429-5c6e9893-bc53-4ce8-b13d-9478d4d497d2.png)
 ### <br/>
 
+### 로그인이 되어 있는 경우라면 key 발급을 안 하고 auth-mode login 을 이용하자.
+```
+az storage blob upload --account-name hpcsourcestorage --container-name sbe-container-001 --file test.txt --name test.txt --auth-mode login
+```
+### <br/>
+
 ### sync 로 복사하는 방법
 ```
 az storage blob sync --account-name uploadstorage1 --container uploadcontainer1 -s /TBI/People/tbi/jhshin/test/test/ --connection-string [key]
