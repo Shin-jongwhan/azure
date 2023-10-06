@@ -45,7 +45,7 @@ azure login
 #### To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code H24WF3NYT to authenticate.
 #### ![image](https://user-images.githubusercontent.com/62974484/226252077-f32e0f48-d696-498e-9ddb-9a4e1b7ce88e.png)
 ### 접속 확인
-#### ![image](https://user-images.githubusercontent.com/62974484/226252099-5baf020b-ad83-4c4d-a5ae-883019be2355.png)
+#### ![image](https://github.com/Shin-jongwhan/azure/assets/62974484/46991f76-e0ec-461b-99ad-f959d5b275ae)
 ### <br/>
 
 ### 업로드
