@@ -58,7 +58,7 @@ az storage blob upload --account-name uploadstorage1 --container-name uploadcont
 # 폴더 생성하면서 업로드
 az storage blob upload-batch --account-name uploadstorage1 --destination uploadcontainer1/test -s /TBI/People/tbi/jhshin/test/test/ --connection-string [key] --auth-mode key
 ```
-#### ![image](https://user-images.githubusercontent.com/62974484/226264703-22554df3-92f0-4859-a2ed-ff47d7666c9a.png)
+#### ![image](https://github.com/Shin-jongwhan/azure/assets/62974484/0835aa36-492d-4144-a053-56e281383b72)
 #### ![image](https://user-images.githubusercontent.com/62974484/226267429-5c6e9893-bc53-4ce8-b13d-9478d4d497d2.png)
 ### <br/>
 
@@ -69,7 +69,7 @@ az storage blob sync --account-name uploadstorage1 --container uploadcontainer1 
 #### ![image](https://user-images.githubusercontent.com/62974484/226267429-5c6e9893-bc53-4ce8-b13d-9478d4d497d2.png)
 ### 폴더로 sync 복사
 ```
-az storage blob sync --account-name uploadstorage1 --container uploadcontainer1/test -s /TBI/People/tbi/jhshin/test/test/ --connection-string "DefaultEndpointsProtocol=https;AccountName=uploadstorage1;AccountKey=2BodvJ/SQXpfAAP6df0fAcx+5CjBH/1Biowo81yk0C+xYEeFJu+90Fmw/B1UNR+pO+ufJ2gB3WYs+ASt9YeM9g==;EndpointSuffix=core.windows.net"
+az storage blob sync --account-name uploadstorage1 --container uploadcontainer1/test -s /TBI/People/tbi/jhshin/test/test/ --connection-string [key]
 ```
 #### ![image](https://user-images.githubusercontent.com/62974484/226267725-631a1c9b-21fb-48c9-89fd-806e51b35cd2.png)
 ### <br/>
@@ -78,5 +78,5 @@ az storage blob sync --account-name uploadstorage1 --container uploadcontainer1/
 ### 최상위 디렉터리부터 쭉 삭제한다.
 ### --pattern 을 줘서 삭제할 수도 있다.
 ```
-az storage blob delete-batch --account-name uploadstorage1 --source uploadcontainer1 --connection-string "DefaultEndpointsProtocol=https;AccountName=uploadstorage1;AccountKey=2BodvJ/SQXpfAAP6df0fAcx+5CjBH/1Biowo81yk0C+xYEeFJu+90Fmw/B1UNR+pO+ufJ2gB3WYs+ASt9YeM9g==;EndpointSuffix=core.windows.net" --auth-mode key
+az storage blob delete-batch --account-name uploadstorage1 --source uploadcontainer1 --connection-string [key] --auth-mode key
 ```
