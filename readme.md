@@ -53,10 +53,10 @@ azure login
 #### ![image](https://user-images.githubusercontent.com/62974484/226264656-0c4dc823-7c14-41f3-9795-2b61bf347c22.png)
 ### * --container uploadcontainer1/test 맨 뒤에 / 붙이면 되긴 하는데 안에 폴더가 더 생성되니 붙이면 안 됨
 ```
-az storage blob upload --account-name uploadstorage1 --container-name uploadcontainer1 --file test.txt --name test.txt  --connection-string "DefaultEndpointsProtocol=https;AccountName=uploadstorage1;AccountKey=2BodvJ/SQXpfAAP6df0fAcx+5CjBH/1Biowo81yk0C+xYEeFJu+90Fmw/B1UNR+pO+ufJ2gB3WYs+ASt9YeM9g==;EndpointSuffix=core.windows.net" --auth-mode key
+az storage blob upload --account-name uploadstorage1 --container-name uploadcontainer1 --file test.txt --name test.txt  --connection-string [key] --auth-mode key
 
 # 폴더 생성하면서 업로드
-az storage blob upload-batch --account-name uploadstorage1 --destination uploadcontainer1/test -s /TBI/People/tbi/jhshin/test/test/ --connection-string "DefaultEndpointsProtocol=https;AccountName=uploadstorage1;AccountKey=2BodvJ/SQXpfAAP6df0fAcx+5CjBH/1Biowo81yk0C+xYEeFJu+90Fmw/B1UNR+pO+ufJ2gB3WYs+ASt9YeM9g==;EndpointSuffix=core.windows.net" --auth-mode key
+az storage blob upload-batch --account-name uploadstorage1 --destination uploadcontainer1/test -s /TBI/People/tbi/jhshin/test/test/ --connection-string [key] --auth-mode key
 ```
 #### ![image](https://user-images.githubusercontent.com/62974484/226264703-22554df3-92f0-4859-a2ed-ff47d7666c9a.png)
 #### ![image](https://user-images.githubusercontent.com/62974484/226267429-5c6e9893-bc53-4ce8-b13d-9478d4d497d2.png)
