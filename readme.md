@@ -68,6 +68,12 @@ az storage blob upload --account-name hpcsourcestorage --container-name sbe-cont
 ```
 ### <br/>
 
+### 폴더 업로드
+```
+az storage blob upload-batch --destination sbe-container-001 --account-name hpcsourcestorage --destination-path [dir] --source [dir] --auth-mode login
+```
+### <br/>
+
 ### sync 로 복사하는 방법
 ```
 az storage blob sync --account-name uploadstorage1 --container uploadcontainer1 -s /TBI/People/tbi/jhshin/test/test/ --connection-string [key]
